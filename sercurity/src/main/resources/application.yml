@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+
+
+---
+spring:
+  profiles: dev
+  thymeleaf:
+    prefix:
+      classpath: /templates
+    cache: false
+logging:
+  level:
+    com.swft.* : debug
+---
+spring:
+  profiles: test
